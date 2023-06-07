@@ -1,0 +1,35 @@
+.page-colour{
+    background-color: #2d2c30;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #e1daf5;
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px yellowgreen;
+    font-size: 20px;
+}
+img{
+    width: 600px;
+    height: 200px;
+    }
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #e1daf5;
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px yellowgreen;
+    font-size: 16px;
+}
+p{
+    margin: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #e1daf5;
+    font-weight: 200;
+}
