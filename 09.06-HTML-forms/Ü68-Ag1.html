@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML form</title>
+    </head>
+    <body>
+        <h2>Form</h2>
+        <form action="/formdata" method="post">
+            <p>Please fill this form</p>
+            <label for="username">USERNAME</label>
+            <input type="text" id="username" placeholder="Enter your name here"><br>
+            <br>
+            <label for="message">Please enter your message here:</label><br>
+            <textarea rows="5" cols="30" placeholder="Gib hier deine Nachricht ein"></textarea>
+            <br>
+            <input type="hidden" value="0112358132134"><br>
+
+            <hr>
+            <label for="country">Select Country:</label>
+            <select name="country" id="country">
+            <option value="germany">Germany</option>
+            <option value="france" selected>France</option>
+            <option value="spain">Spain</option>
+            </select>
+
+            <hr>
+            <p>Favorite Colour:</p>
+            <input type="radio" id="favourite colour" name="colour" value="red">
+            <label for="red">Red</label>
+            <input type="radio" id="favourite colour" name="colour" value="green" checked>
+            <label for="green">Green</label>
+            <input type="radio" id="favourite colour" name="colour" value="blue">
+            <label for="blue">Blue</label>
+
+            <hr>
+            <input type="submit" value="Send">
+            <input type="reset" value="Delete everything">
+        </form>
+    </body>
+</html>

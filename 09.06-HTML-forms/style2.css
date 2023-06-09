@@ -1,0 +1,14 @@
+a{
+    color: black;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+    background-color: #66ff66;   
+}
+a:active {
+    background-color: hotpink;
+  } 
+  a:visited {
+    color: brown;
+  }

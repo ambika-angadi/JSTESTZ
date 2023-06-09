@@ -1,0 +1,10 @@
+h2{
+    background-color: aqua;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    text-align: center;
+    line-height: normal;
+    letter-spacing: 3px;
+}
