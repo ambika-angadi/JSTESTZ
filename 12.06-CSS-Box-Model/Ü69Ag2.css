@@ -1,0 +1,23 @@
+#first-div{
+    background-color: aqua;
+    width: 200px;
+    height:200px;
+    border: 5px dashed blueviolet;
+}
+#second-div{
+    background-color: aqua;
+    width: 200px;
+    height:200px;
+    border: 5px dashed red;
+}
+#third-div{
+    background-color: aqua;
+    width: 200px;
+    height:200px;
+    border: 5px dashed orange;
+}
+.container{
+    display: flex;
+    gap: 10px;
+    margin-left: 30%;
+}
