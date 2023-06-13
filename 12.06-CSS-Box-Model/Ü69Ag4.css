@@ -44,9 +44,9 @@ border: white;
   width: 100%;
   font-size: 18px;
 }
-.card a {
+a {
     text-decoration: none;
-    font-size: 5px;
+    font-size: 10px;
     color: black;
   }
   button:hover{
