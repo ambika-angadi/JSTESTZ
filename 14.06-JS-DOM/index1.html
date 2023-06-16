@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>HTML Manipulation with JavaScript</title>
+</head>
+
+<body>
+    <div class="content" id="content_first">
+        <p>First section.</p>
+    </div><!-- #content_first -->
+    <div class="content" id="content_second">
+        <p>Second section.</p>
+    </div><!-- #content_second -->
+    <div class="content" id="content_third">
+        <p>Third section.</p>
+    </div><!-- #content_third -->
+
+    <script>
+        // Which content to show
+        let content_visible;
+        switch (Math.floor(Math.random() * 3)) {
+            case 0:
+                content_visible = "#content_first";
+                break; 
+            case 1:
+                content_visible = "#content_second"; 
+                break;
+            case 2:
+                content_visible = "#content_third";
+                break;
+        }
+        document.querySelector(content_visible).setAttribute("hidden", "");
+    </script>
+</body>
+
+</html>

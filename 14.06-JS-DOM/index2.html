@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>HTML Manipulation with JavaScript</title>
+    <style>
+        div.content {
+            border: 1px solid black;
+            opacity: 0.25;
+        }
+
+        div.content.highlight {
+            border: 1px solid red;
+            opacity: 1;
+        }
+
+        img {
+            background-color: red;
+        }
+
+        .blur { filter: blur(10px); }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        <!-- <button onclick='document.getElementById("content_first").classList.add("highlight")'>First</button>
+        <button onclick='document.getElementById("content_second").classList.add("highlight")'>Second</button>
+        <button onclick='document.getElementById("content_third").classList.add("highlight")'>Third</button> -->
+        <button onmouseover='document.getElementById("content_first").classList.toggle("highlight")' onmouseout='document.getElementById("content_first").classList.toggle("highlight")'>First</button>
+
+        <button onclick='document.getElementById("content_second").classList.toggle("highlight")'>Second</button>
+        <button onclick='document.getElementById("content_third").classList.toggle("highlight")'>Third</button>
+        <button onclick="myrandom()">Random</button>
+    </p>
+
+    <div class="content" id="content_first">
+        <p>First section.</p>
+        <img src="https://easywithai.com/storage/2023/02/EasyWithAI-Logo.png">
+    </div><!-- #content_first -->
+    <div class="content" id="content_second">
+        <p>Second section.</p>
+    </div><!-- #content_second -->
+    <div class="content" id="content_third">
+        <p>Third section.</p>
+    </div><!-- #content_third -->
+
+    <script>
+        function myrandom() {
+            // Which content to show
+            let element;
+            switch (Math.floor(Math.random() * 3)) {
+                case 0:
+                    element = "#content_first";
+                    break;
+                case 1:
+                    element = "#content_second";
+                    break;
+                case 2:
+                    element = "#content_third";
+                    break;
+            }
+            document.querySelector(element).classList.add("highlight");
+        }
+
+
+        const img = document.querySelector('img');
+        img.addEventListener('mouseover', toggleBlur);
+
+        function toggleBlur() {
+            this.classList.toggle('blur');
+          }
+
+    </script>
+</body>
+
+</html>

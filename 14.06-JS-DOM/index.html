@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>HTML Manipulation with JavaScript</title>
+</head>
+
+<body>
+    <div class="content" id="content_first">
+        <p>The dynamic content goes here</p>
+        <p>Change me!</p>
+    </div><!-- #content_first -->
+    <div class="content" id="content_second" hidden>
+        <p>Second section</p>
+    </div><!-- #content_second -->
+
+    <!-- script-Tag am ENDE, da DOM ersts NACH dem Laden der Webseite verfügbar ist! -->
+    <script>
+        // Auswahl aller body- und p-elemente
+        // let body = document.getElementsByTagName("body")[0];
+        // console.log("das ist der HTML Code im Body:\n" + body.innerHTML);
+        //let p = body.getElementsByTagName("p");
+        //for (let i=0;i<p.length;i++){
+        //    p[i].innerHTML = "<strong>Das hier ist ein TEST</strong>";
+        //}
+
+        // Auswahl ALLER Elemente; iterieren über alle Elemente
+        //elements = document.getElementsByTagName("*");
+        //for (element of elements) {
+        //    if (element.id == "content_first") {
+        //        element.innerHTML = "<p><strong>New content</strong></p>";
+        //    }
+        //}
+
+        // direkt Auswahl eines Elements mit ID
+        let content_first = document.getElementById("content_first");
+        content_first.innerHTML = "<p><strong>New content</strong></p>";
+
+        // Auswahl mit CSS-Selektoren
+        let div = document.querySelector("#content_first");
+
+    </script>
+</body>
+
+</html>

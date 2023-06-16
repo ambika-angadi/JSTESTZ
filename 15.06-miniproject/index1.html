@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/60456600bd.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="home-id">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/myphoto.png" class="photo">
+                <ul>
+                    <li><a href="#home-id">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Tester</p>
+                <h1>Hi, I am <span>Rudrambika</span><br> from Germany</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"></div>
+                <img src="images/thisisengineering-raeng-sbFmoKBK7jU-unsplash.jpg" width="350px" height="450px">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am an Indian presently living in Germany. I am a certified software tester with an aim to gain in-depth
+                        knowledge in the ever growing field of Information Technology. The idea of contributing to a quality software has always motivated me. Presently I am doing a one-year "Cloud Computing and Devops Engineering" course at Techstarter GmbH. I have also recently finished my German B2 course. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><strong>Manual testing</strong></span><br>Testing websites and mobile apps</li>
+                            <li><span><strong>Automation testing</strong></span><br>HP QTP and Quality Center</li>
+                            <li><span><strong>Programming</strong></span><br>C, C++, Java, html, CSS, JS, Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><strong>Freelance Software Tester 2016-2018</strong></span><br>Tested several websites(real estate website, tourism and travel website, home improvement website, peer to peer lending website, etc..) and android apps(safety app, mileage tracking app, app to sell and buy products) on crowdsourced testing platform Testerwork.com based in London</li>
+                            <li><span><strong>Administrator 2005-2006</strong></span><br>Worked as an administrator at Mater Children's Hospital, Brisbane, Australia</li>
+                            <!--<li><span></span><br>Testing websites and mobile apps</li>-->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><strong>Bachelor of Engineering 1998-2002</strong></span><br>Engineering in Electronics and Instrumentation Technology from VTU, Belgaum, India</li>
+                            <li><span><strong>Training in Manual and Automation Testing 2007-2008</strong></span><br>Software Testing training and project work at Srihitha Technologies, Hyderabad, India</li>
+                            <li><span><strong>Training in Cloud Computing and Devops Engineering since Feb 2023</strong></span><br>Presently attending 1-year course at Techstarter GmbH, Munich, Germany</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------projects-------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1> 
+            <div class="projects-list">
+                  <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Built this Portfolio Website and a Restaurant Website using html, CSS and Javascript</p>
+                    <a href="#">Learn More</a>
+                  </div> 
+                  <div>
+                    <i class="fa-sharp fa fa-money-bill-trend-up"></i>
+                    <h2>E-banking</h2>
+                    <p>Tested an E-banking web application during my S/W testing training in 2007. It allows different users such as admin, bank employee, customers to login and access the application. It also provides information about various services
+                    offered by the bank. The admin is the super user, who has all the privileges for creating the branches,
+                    users and bankers. Studied the business requirements, test plans and test strategies. Involved in designing manual test cases, test data and test execution. Conducted functional testing, exploratory testing and end to end testing. Maintained requirements, test data, test execution and defect tracking and reporting through HP QualityCenter.</p>
+                    <a href="#">Learn More</a>
+                  </div> 
+                  <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Freelancing</h2>
+                    <p>Tested applications on desktop and android platform and reported bugs through the inbuilt bug tracking 
+                        tool. The projects are offered in repetitive test cycles and require mainly functional, regression, UAT, 
+                        end-to-end and exploratory testing. The tasks involved are studying the requirements/specifications,
+                        preparation of test case document and detailed bug reports with useful screenshots, screen recordings,
+                        crash logs, and giving feedback/suggestions on various functionalities of the application.</p>
+                    <a href="#">Learn More</a>
+                  </div> 
+            </div>
+        </div>
+    </div>
+    <!----------certificates------->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+            <div class="cert-list">
+                <div class="cert">
+                    <img src="images/jana-shnipelson-iC3z2DkVcdE-unsplash.jpg" width="200" height="300">
+                    <div class="layer">
+                        <h3>ISTQB certificate</h3>
+                        <p>Certified as ISTQB Foundation Level Software Tester in 2008</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="cert">
+                    <img src="images/joanna-kosinska-LbMy35NyCNg-unsplash.jpg" width="200" height="300">
+                    <div class="layer">
+                        <h3>Tescom Test Analyst</h3>
+                        <p>In July 2011 underwent training for Test Analyst certification and passed exam at Tescom Intl Pte Ltd, 
+                            Singapore (www.tescom-intl.com) Tescom is a global software quality assurance company.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="cert">
+                    <img src="images/education-diploma-certificate-desk-objects.jpg" width="200" height="300">
+                    <div class="layer">
+                        <h3>AWS Cloud Practitioner</h3>
+                        <p>In April 2023 passed AWS Cloud Practitioner Exam</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--------------contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>012345678</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume-1002.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email address" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright©Ambika.<i class="fa-solid fa-clover"></i></p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+               tablink.classList.remove("active-link"); 
+            }
+            for(tabcontent of tabcontents){
+               tabcontent.classList.remove("active-tab"); 
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwLFo_Xdu0v4LZGibO7ikpEMf9_NvDU4KPNJkm9StOLiX00tKSE9_mY2_C_wXnlbQs/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
