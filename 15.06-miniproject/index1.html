@@ -31,8 +31,8 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1"></div>
-                <img src="images/thisisengineering-raeng-sbFmoKBK7jU-unsplash.jpg" width="350px" height="450px">
+                <div class="about-col-1">
+                <img src="images/thisisengineering-raeng-sbFmoKBK7jU-unsplash.jpg" height="400"></div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
                     <p>I am an Indian presently living in Germany. I am a certified software tester with an aim to gain in-depth
@@ -41,6 +41,7 @@
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -61,6 +62,12 @@
                             <li><span><strong>Bachelor of Engineering 1998-2002</strong></span><br>Engineering in Electronics and Instrumentation Technology from VTU, Belgaum, India</li>
                             <li><span><strong>Training in Manual and Automation Testing 2007-2008</strong></span><br>Software Testing training and project work at Srihitha Technologies, Hyderabad, India</li>
                             <li><span><strong>Training in Cloud Computing and Devops Engineering since Feb 2023</strong></span><br>Presently attending 1-year course at Techstarter GmbH, Munich, Germany</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span><strong>Hobbies</strong></span><br>Reading non-fiction, playing chess</li>
+                            <li><span><strong>Favourite Passtime</strong></span><br>Watching Netflix, going to movies</li>
                         </ul>
                     </div>
                 </div>
@@ -88,7 +95,7 @@
                   </div> 
                   <div>
                     <i class="fa-brands fa-app-store"></i>
-                    <h2>Freelancing</h2>
+                    <h2>Freelancing(remote)</h2>
                     <p>Tested applications on desktop and android platform and reported bugs through the inbuilt bug tracking 
                         tool. The projects are offered in repetitive test cycles and require mainly functional, regression, UAT, 
                         end-to-end and exploratory testing. The tasks involved are studying the requirements/specifications,
@@ -126,7 +133,7 @@
                     <div class="layer">
                         <h3>AWS Cloud Practitioner</h3>
                         <p>In April 2023 passed AWS Cloud Practitioner Exam</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://www.credly.com/badges/9e4015e8-321a-4f68-a0fe-6f02b3b84413/public_url"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -156,6 +163,7 @@
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -181,11 +189,17 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwLFo_Xdu0v4LZGibO7ikpEMf9_NvDU4KPNJkm9StOLiX00tKSE9_mY2_C_wXnlbQs/exec'
         const form = document.forms['submit-to-google-sheet']
-      
+        const msg = document.getElementById("msg")
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
             .catch(error => console.error('Error!', error.message))
         })
       </script>

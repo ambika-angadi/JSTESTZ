@@ -1,0 +1,30 @@
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-columns: 1fr, 1fr, 1fr;*/
+    /*grid-template-columns: 2fr, 1fr, 1fr;*/
+    grid-gap: 10px;
+    width: 300px;
+    margin-top: 20px;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+    /*background-image: url('images/joanna-kosinska-Uvl3W4XWd4U-unsplash.jpg');
+    background-size: cover;*/
+}
+.cell:hover{
+    background-color: blueviolet;
+}
+@media (min-width: 600px) {
+    .cell { 
+        display: flex;
+    }		
+}
+

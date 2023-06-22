@@ -19,7 +19,6 @@ html{
 }
 .container{
     padding: 10px 10%;
-
 }
 nav{
     display: flex;
@@ -32,6 +31,9 @@ nav{
     /*height: 100px;*/
     /*border-radius: 60%;*/
 }
+/*.container nav .photo ul li{
+    position: fixed;
+}*/
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -63,6 +65,10 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size:60px;
     margin-top: 20px;
+    text-shadow: 5px 5px 5px lightblue;
+}
+.header-text p{
+    text-shadow: 2px 2px 2px lightcoral;
 }
 .header-text h1 span{
     color: red;
@@ -73,10 +79,7 @@ nav ul li a:hover::after{
     background-size: cover;
     background-position: center;
     color: black;
-}
-#about{
     padding: 80px 0;
-    color: black;
 }
 .row{
     display: flex;
@@ -84,11 +87,11 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 .about-col-1{
-    /*flex-basis: 35%;*/   
+    flex-basis: 35%;   
 }
 .about-col-1 img{
     width: 100%;
-    /*margin-left: 0;*/
+    margin-left: 0;
     border-radius: 15px;
 }
 .about-col-2{
@@ -98,6 +101,7 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color:black;
+    text-shadow: 3px 3px 3px lightcoral;
 }
 .tab-titles{
     display: flex;
@@ -140,12 +144,9 @@ nav ul li a:hover::after{
 /*--------------projects------------*/
 #projects{
     padding: 30px 0;
-}
-#projects{
     background-image: url("images/markus-spiske-k0rVudBoB4c-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    /*color: black;*/
 }
 .projects-list{
     display: grid;
@@ -184,12 +185,9 @@ nav ul li a:hover::after{
 /*----------------certificates------------*/
 #certificates{
     padding: 50px 0;
-}
-#certificates{
     background-image: url("images/annie-spratt-pKpipZVVEC0-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    /*color: black;*/
 }
 .cert-list{
     display: grid;
@@ -224,7 +222,7 @@ nav ul li a:hover::after{
     padding: 0 40px;
     text-align: center;
     font-size: 20px;
-    transform: height 0.5s;
+    transition: height 0.5s;
 }
 .layer h3{
     font-weight: 500;
@@ -271,11 +269,9 @@ nav ul li a:hover::after{
     background-image: url("images/bharath-g-s-aLGiPJ4XRO4-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    /*color: black;*/
 }
 .contact-left{
     flex-basis: 35%;
-
 }
 .contact-right{
     flex-basis:60%;
@@ -310,14 +306,14 @@ nav ul li a:hover::after{
 .contact-right form{
     width: 100%;
 }
-form input, form textarea{
+form input, textarea{
     width: 100%;
     border: 0;
     outline: none;
     background: lightblue;
     padding: 15px;
     margin: 15px 0;
-    color:#fff;
+    color: black;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -337,4 +333,9 @@ form .btn2{
 }
 .copyright i{
     color: green;
+}
+#msg{
+    color: #ff004f;
+    margin-top: -40px;
+    display:block;
 }
